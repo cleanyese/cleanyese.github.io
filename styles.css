@@ -1,0 +1,97 @@
+/* Estilo general para la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* un tono azul muy suave como fondo de la página */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* centra el texto de la página */
+}
+
+header {
+    background-color: #014894; /* un tono ligeramente más oscuro de azul para la cabecera */
+    padding: 10px 20px; /* espacio alrededor del contenido en la cabecera */
+    text-align: center; /* centra el contenido de la cabecera */
+}
+
+header img {
+    width: 100%; /* se adapta al ancho del contenedor */
+    max-width: 200px; /* un máximo de 200px para asegurar que no sea demasiado grande */
+    height: auto; /* mantiene la proporción del logo */
+}
+
+main {
+    padding: 20px; /* espacio alrededor del contenido principal */
+}
+
+h1, h2 {
+    text-align: center; /* centra los títulos */
+}
+
+h1 {
+    font-size: 5em; /* tamaño grande para el título principal */
+    color: #1a4d6e; /* un color azul oscuro para resaltar el título */
+    animation: fadeIn 2s ease-out; /* animación para el título principal */
+}
+
+h2 {
+    font-size: 3em; /* un tamaño adecuado para los subtítulos */
+    color: #206080; /* un azul medio para los subtítulos */
+    margin-bottom: 20px; /* espacio debajo del subtítulo */
+}
+
+h3 {
+    font-size: 2em; /* un tamaño adecuado para los subtítulos */
+    color: #f0f8ff; /* un azul medio para los subtítulos */
+    margin-bottom: 20px; /* espacio debajo del subtítulo */
+}
+section {
+    background-color: #014894; /* fondo blanco para las secciones para mejorar la legibilidad */
+    padding: 15px; /* espacio interior para las secciones */
+    margin-bottom: 20px; /* separa las secciones entre sí */
+    border-radius: 5px; /* bordes redondeados para las secciones */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra sutil para las secciones */
+}
+
+#sobre-mi p,#servicios p, #contacto p {
+    text-align: justify; /* justifica el texto de la sección sobre mí */
+    color: #e6f2ff;
+}
+
+#contacto p {
+    text-align: center; /* centra el texto en la sección de contacto */
+}
+
+footer {
+    background-color: #e6f2ff; /* mismo color que la cabecera para el pie de página */
+    text-align: center; /* texto centrado en el pie de página */
+    padding: 10px 20px; /* espacio alrededor del contenido en el pie */
+    font-size: 0.8em; /* un tamaño de fuente más pequeño para el pie */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    header, main, footer {
+        padding: 10px; /* reduce el padding para dispositivos más pequeños */
+    }
+
+    h1 {
+        font-size: 4.8em; /* hace el título más grande y llamativo en móviles */
+    }
+
+    h2 {
+        font-size: 2.4em; /* hace el subtítulo más grande en móviles */
+    }
+}
+
+/* Animación simple de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
